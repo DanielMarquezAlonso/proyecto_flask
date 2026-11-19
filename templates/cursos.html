@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}Cursos · Mi sitio{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <h1>Mis cursos</h1>
+  <ul>
+    {% for curso in cursos %}
+      <li>{{ curso }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}
